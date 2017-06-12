@@ -10,7 +10,7 @@ export const ContentWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
 `;
 
 export const Heading = styled.p`

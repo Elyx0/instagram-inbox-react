@@ -37,7 +37,7 @@ export default (state = initialState, action) => {
     case inboxActions.RECEIVED_FEED: {
       const { data, id } = action;
       const newState = cloneDeep(state);
-      newState.feeds[id].items = data;
+      newState.feeds[id].items = data.reverse();
       newState.feeds[id].lastFetchTime = +(new Date());
       return newState;
     }

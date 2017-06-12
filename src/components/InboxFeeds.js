@@ -15,7 +15,7 @@ export default class InboxFeeds extends PureComponent {
   renderFeeds(feeds) {
     return Object.keys(feeds).map(id => {
       const feed = feeds[id];
-      const lastMessage = feed.items[0];
+      const lastMessage = feed.items[feed.items.length-1];
       const { participants } = feed;
       const participantsAccounts = participants.map(id => this.props.accounts[id]);
       return <InboxFeed key={id} selected={this.props.selected == id} onClick={this.props.setSelected.bind(null,id)}>

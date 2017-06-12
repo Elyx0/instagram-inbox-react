@@ -69,6 +69,7 @@ export const InboxFeedDetails = styled.div`
 export const InboxRight = styled.div`
   background: rgb(252, 252, 252);
   flex: 4;
+  position: relative;
   display: flex;
   ${'' /* ${props => props.feed && `
     align-items: center;
@@ -83,3 +84,19 @@ export const DefaultMessage = styled.div`
   font-size: .9em;
   color: ${props => props.error ? props.theme.colors.error : props.theme.colors.contentGrey};
 `;
+
+export const ExportIcon = styled.div`
+  position: absolute;
+  top:10px;
+  right:10px;
+  z-index: 9999;
+  font-size: 1.2em;
+  border-radius: 50%;
+  background: rgba(239, 239, 239,.7);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,.2);
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`

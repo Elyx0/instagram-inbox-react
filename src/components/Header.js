@@ -8,7 +8,7 @@ import ServerStatus from '../components/ServerStatus';
 const HeaderWrapper = styled.div`
   border-bottom: 1px solid;
   border-color: ${props => props.theme.colors.borderGrey};
-  padding: .5rem 1rem;
+  padding: .2rem 1rem;
   display:flex;
   justify-content: space-between;
   align-items: center;

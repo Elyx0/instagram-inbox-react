@@ -6,6 +6,8 @@
     "animate-css-styled-components": "^0.0.14",
     "history": "^4.6.1",
     "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "moment-timezone": "^0.5.13",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
@@ -20,11 +22,11 @@
     "styled-components": "^2.0.0"
   },
   "keywords": [
-  "instagram",
-  "inbox",
-  "export",
-  "react",
-  "pdf"
+    "instagram",
+    "inbox",
+    "export",
+    "react",
+    "pdf"
   ],
   "author": "Elyx0",
   "license": "ISC",
