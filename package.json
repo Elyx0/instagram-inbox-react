@@ -1,0 +1,41 @@
+{
+  "name": "react-instagram",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animate-css-styled-components": "^0.0.14",
+    "history": "^4.6.1",
+    "lodash": "^4.17.4",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "next",
+    "react-scrollable-list-view": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-storage": "^4.1.2",
+    "redux-storage-engine-localstorage": "^1.1.4",
+    "redux-thunk": "^2.2.0",
+    "styled-components": "^2.0.0"
+  },
+  "keywords": [
+  "instagram",
+  "inbox",
+  "export",
+  "react",
+  "pdf"
+  ],
+  "author": "Elyx0",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.0.1",
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
