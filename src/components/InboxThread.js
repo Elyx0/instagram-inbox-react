@@ -7,7 +7,7 @@ import {
   Toolbar,
 } from '../styles/styles-inbox';
 import Message from '../components/Message';
-
+import createPDF from './PDFExporter';
 export default class InboxThread extends PureComponent {
   constructor(props) {
     super(props);
@@ -40,6 +40,19 @@ export default class InboxThread extends PureComponent {
     return this.renderThread(feed,accounts);
   }
 
+  async exportPdf(feed, accounts) {
+    this.setState({exporting:true});
+    try {
+      const res = await createPDF(feed, accounts);
+    }
+    catch(e) {
+      console.error(e);
+    }
+    finally {
+        this.setState({exporting:false});
+    }
+  }
+
   renderThread(feed, accounts) {
     let previousTime = false;
     const messages = feed.items.map((msg, i) => {
@@ -52,7 +65,7 @@ export default class InboxThread extends PureComponent {
     });
      return (
        <div>
-       <ExportIcon>📤</ExportIcon>
+       <ExportIcon exporting={this.state.exporting} onClick={this.exportPdf.bind(this,feed, accounts)}>{this.state.exporting ? '💌': '📤'}</ExportIcon>
        <ListView runwayItems={10} runwayItemsOpposite={10} aveCellHeight={30}>
          { messages }
        </ListView>

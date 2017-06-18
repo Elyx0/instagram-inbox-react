@@ -1,16 +1,16 @@
-const colors = {
-  primary: 'rgb(56, 151, 240)',
-  lightprimary: 'rgb(105, 176, 242)',
-  lightgrey: 'rgb(185, 185, 185)',
+export const colors = {
+  primary: '#3897f0',
+  lightprimary: '#69b0f2',
+  lightgrey: '#b9b9b9',
   borderGrey: '#e6e6e6',
   backgroundGrey: '#fafafa',
   contentGrey: '#9a9a9a',
   backgroundLight: '#fff',
-  backgroundLight2: 'rgb(240, 240, 240)',
-  green: 'rgb(100,168,24)',
-  borderGreen: 'rgb(107,179,138)',
-  error: 'rgb(185,55,39)',
-  dark: 'rgb(75, 75, 75);',
+  backgroundLight2: '#f0f0f0',
+  green: '#64a818',
+  borderGreen: '#6bb38a',
+  error: '#b93727',
+  dark: '#4b4b4b;',
 };
 
 const indicator = {

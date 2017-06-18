@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { media, truncate } from './styles-utils';
 
 export const InboxWrapper = styled.div`
@@ -71,10 +71,6 @@ export const InboxRight = styled.div`
   flex: 4;
   position: relative;
   display: flex;
-  ${'' /* ${props => props.feed && `
-    align-items: center;
-    justify-content: center;
-  `} */}
 `
 
 export const DefaultMessage = styled.div`
@@ -83,6 +79,15 @@ export const DefaultMessage = styled.div`
   text-align: center;
   font-size: .9em;
   color: ${props => props.error ? props.theme.colors.error : props.theme.colors.contentGrey};
+`;
+
+const spin = keyframes`
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 `;
 
 export const ExportIcon = styled.div`
@@ -99,4 +104,13 @@ export const ExportIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-right: .1em;
+  ${props => props.exporting && `
+    animation: ${spin} 2s linear infinite;
+  `};
+  @media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    padding-right: 0;
+}
+
 `
