@@ -4,6 +4,8 @@ A React/Redux/styled-components PWA for reading instagram private inbox leveragi
 
 ❗️Work in progress
 
+Live Version: https://instagram-reader.now.sh
+
 ## Screens
 
 ![Demo](/public/igread.gif)
